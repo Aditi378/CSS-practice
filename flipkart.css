@@ -1,0 +1,537 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(241, 242, 244);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar
+{
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+}
+.nav-logo
+{
+    height: 43px;
+    width: 160px;
+    background-image: url("flipkart-logo.png");
+    background-size: cover;
+}
+/*box2*/
+.nav-search
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f0f5ff;
+   border-radius: 8px;
+   overflow: hidden;
+}
+.search-icon
+{
+   height: 50px;
+   width: 44px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f5ff;
+ 
+}
+.search1
+{
+   height: 100%;
+   width: 600px;
+   background-color: #f0f5ff;
+   font-size: 1.2em;
+   font-weight: 450;
+   outline: none;
+   border: none;
+  margin-top: 15px;  
+}
+/*box-3*/
+.nav-quality-flex
+{
+    display: flex;
+    background-color: white;
+}
+.nav-quality-line
+{
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 8px;
+}
+.nav-login-icon
+{
+    background-image: url("flipkart_login_icon.png");
+    background-size: cover;
+}
+.login-select
+{
+    outline: none;
+    border: none;
+    background-color: white;
+}
+.nav-quality-icon
+{
+    height: 24px;
+    width: 24px;
+}
+/*box-cart*/
+
+.cart-icon
+{
+    background-image: url("cart-icon.png");
+    height: 24px;
+    width: 24px;
+}
+/*nav-seller*/
+
+
+.seller-icon
+{
+    background-image: url("seller-icon.png");
+    
+}
+
+/*box-options*/
+.options
+{
+    background-image: url("dot-icon.png");
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+}
+
+/*panel*/
+.panel
+{
+    padding: 20px 20px 0px;
+    padding-top: 80px;
+    display: flex;
+   
+}
+.box
+{
+    border: none;
+    height: 151px;
+    width: 25%;
+    background-color: white;
+    padding-left: 50px;
+   padding-top: 30px;
+}
+.box-img
+{
+    background-size: cover;
+    height: 64px;
+    width: 64px;
+    background-color: white;
+   
+}
+.box-line
+{
+    color: rgb(62, 61, 61);
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 600;
+   
+}
+/*hero-section*/
+
+/*hero-panel1*/
+.hero-panel
+{
+   height: 250px;
+  margin: 15px 20px 0px 20px;
+}
+.panel1-img {
+    height: 215px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: changeImage 15s steps(1, end) infinite;
+}
+
+/* Keyframes for changing images */
+@keyframes changeImage {
+    0%   { background-image: url("hero-panel-1.png"); }
+    33.33% { background-image: url("hero_photo-2.webp"); }
+    66.66% { background-image: url("hero-panel-3.png"); }
+    100%  { background-image: url("hero-panel-1.png"); }
+}
+
+.slide-lines
+{
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color:white ;
+}
+.slide-line-q
+{
+    width: 12px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.13);
+    margin-left: 10px;
+    
+}
+.slide-miniline-q
+{
+    width: 12px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.13);
+    
+}
+.slide-line-ani1
+{
+    animation-name: slide-size;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.slide-line-ani2
+{
+    animation-name: slide-size;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+}
+
+.slide-line-ani3
+{
+    animation-name: slide-size;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 10s;
+}
+@keyframes slide-size
+{
+    from{width: 12px;}
+    to{width: 48px;}
+}
+.mini-slide-line1,
+.mini-slide-line2,
+.mini-slide-line3 {
+    background-color: black;
+    height: 4px;
+    border-radius: 2px;
+    width: 0px;
+    animation: black-slide 15s linear infinite;
+    position: relative;
+    
+}
+@keyframes black-slide {
+    0%   { width: 0px; }
+    10%  { width: 48px; }
+    33.33% { width: 0px; }
+    34%  { width: 0px; }
+    100% { width: 0px; }
+}
+
+/* delay each to get the staggered effect */
+.mini-slide-line1 { animation-delay: 0s; }
+.mini-slide-line2 { animation-delay: 5s; }
+.mini-slide-line3 { animation-delay: 10s; }
+
+/*panel-2 from here*/
+.hero-panel-2
+{
+    display: flex;
+}
+.electronics
+{
+    height: 274px;
+    width: 1100px;
+    background-color: white;
+    margin-left: 20px;
+}
+.electronics h1
+{
+    height: 62px;
+    
+    padding-top: 20px;
+    background-color: white;
+    margin-left: 10px;
+}
+.panel-2
+{
+    height: 212px;
+    width: 1100px;
+    margin-top: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.panel-2-box
+{
+    height: 184px;
+    width: 156px;
+    background-color: white;
+}
+.panel-2-img
+{
+    height: 160px;
+    width: 108px;
+    background-color: white;
+}
+
+.panel-2-image
+{
+    height: 108px;
+    width: 108px;
+    background-color: white;
+}
+.i1
+{
+background-image: url("watch_panel2.png");
+background-size: cover;
+}
+.i2
+{
+    background-image: url("monitor_panel2.png");
+    background-size: cover;
+}
+.i3
+{
+    background-image: url("headphone_panel2.png");
+    background-size: cover;
+}
+.i4
+{
+    background-image: url("camera_panel2.png");
+    background-size: cover;
+}
+.i5
+{
+    background-image: url("speaker_panel2.png");
+    background-size: cover;
+}
+.product-detail
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 52px;
+    width: 108px;
+    background-color: white;
+}
+.product-detail p
+{
+    background-color: white;
+}
+.prices
+{
+    font-weight: 700;
+}
+
+.panel-2-last-img
+{
+    height: 305px;
+    width: 250px;
+    background-image: url("indigo-panel2.png");
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*panel-3*/
+.panel-3
+{
+    display: flex;
+    justify-content: space-evenly;
+    height: 550px;
+    
+   
+
+}
+.panel-3-box
+{
+    height: 100%;
+    width: 31%;
+    background-color: white;
+    margin-top: 15px;
+    padding: 15px 0px 15px;     
+}
+.panel-3-box h1
+{
+    margin-left: 10px;
+    background-color: white;
+}
+.panel3-mini-box
+{
+    height: 80;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.panel-mini
+{
+    height: 237.5px;
+    width: 191.75px;
+    background-color: white;
+    border: 0.5px solid #ebebeb;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.mini-img
+{
+    height: 151px;
+    width: 151px;
+    background-size: cover;
+}
+.prod-about
+{
+    background-color: white;
+    margin-top: 10px;
+}
+.about1
+{
+    background-color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.about2
+{
+    color: green;
+}
+/*panel-4*/
+
+.panel-4
+{
+    margin-top: 40px;
+    padding: 15px 0px 15px;
+}
+
+.panel-4-box3
+{
+    height: 585px;
+    background-image: url('panel-4-fashion.jpg');
+    background-size: cover;
+}
+
+/*footer*/
+.footer
+{
+    width: 867px;
+    height: 3000px;
+    margin-top: 100px;
+    width: 100%;
+    
+}
+.footer-panel-1
+{
+    padding: 25px;
+    color: grey;
+}
+
+.footer-panel2
+{
+    height: 300px;
+    width: 100%;
+    
+}
+.footer-panel2-box1
+{
+    background-color: #212121;
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content:  space-evenly;
+}
+.footer-panel2-box2
+{
+    background-color: #212121;
+    height: 69px;
+    margin-top: 0.5px;
+}
+.foot-box
+{
+    background-color: #212121;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-col
+{
+    background-color: #212121;
+    color: white;
+}
+.col-main
+{
+    background-color:  #212121;
+    color: #878787;
+}
+.col-element
+{
+    margin-top: 10px;
+    color: #fff;
+}
+.col-el
+{
+    
+  background-color: #212121;
+  font-weight:550;
+  font-size: 0.78rem;
+  color: #fff;
+}
+.footer-icon-social
+{
+    background-color: #212121;
+   padding-top: 20px;
+}
+.footer-icon
+{
+    margin-top: 15px;
+    margin-right: 55px;
+    display: flex;
+    color: #212121;
+    background-color: #212121;
+    justify-content: space-evenly;
+}
+
+.footer-panel2-box2
+{
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.box2-opt-1
+{
+    display: flex;
+    background-color: #212121;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.optionsss
+{
+    background-color: #212121;
+    color: white;
+    height: 30px;
+    font-size: 0.79rem;
+    margin-left: 10px;
+}
+.icons
+{
+    width: 15px;
+    height: 15px;
+   background-size: cover;
+  background-color: #212121;
+}
